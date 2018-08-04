@@ -1,0 +1,52 @@
+/*
+Kuppam Engineering College //KEC Coding Club
+*/
+
+/*
+First week Challange
+*/
+
+/*
+Done by Charan N K
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int max(int a, int b) {
+
+ return a>b? a:b;          // For finding the maximum number
+
+}
+void main() {
+
+int x,y,z,result=0;
+
+clrscr();
+
+    printf("\n Enter the 3 numbers:");
+
+       scanf("%d %d %d",&x, &y, &z);
+
+	result = max(result, x + y + z);
+	result = max(result, x * y * z);
+	result = max(result, (x + y) * z); // By using Permutation and Combination
+	result = max(result, (x * y) + z);
+	result = max(result, x * (y + z));
+	result = max(result, x + (y * z));
+
+		printf("\n\n The Maximum result is %d",result);
+
+getch();
+
+}
+
+
+
+
+
+
+
+
+
+
